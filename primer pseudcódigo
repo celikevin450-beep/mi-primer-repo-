@@ -1,0 +1,17 @@
+Algoritmo dias de la semana ()
+    inicio 
+    definir numero Como entero 
+    escribir"escribir numero del 1-7"
+      leer numero 
+
+      según numero escribir
+      1: escribir "lunes"
+      2: escribir "martes"
+      3: escribir "miercoles"
+      4: escribir "jueves"
+      5: escribir "viernes"
+      6: escribir "sabado"
+      7: escribir "domingo"
+      de otro modo: escribir "error, el numero dee ser de 1 al 7"
+      finSegún
+Fin  Algoritmo
