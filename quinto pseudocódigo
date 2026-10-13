@@ -1,0 +1,10 @@
+Algoritmo log_area_circulo()
+   inicio
+    definir radio, longitug, area Como real 
+    escribir "escribir radio"
+    leer radio 
+    longitud <- 2 * pi * radio 
+    area <- pi * (radio * radio)
+    escribir "la longitud de la circunferencia es", longitud
+    escribir "el area de la circunferenca es", area
+FinAlgortimo
