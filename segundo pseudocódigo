@@ -1,0 +1,15 @@
+Algoritmo calcular()
+  inicio 
+     definir num1, num2, num3, num4
+     defini suma, producto, media como real
+     escribir"ingrese 4 numeros"
+     leer num1, num2, num3, num4
+
+     suma <- num1 + num2 + num3 + num4
+     producto <- num1 * num2 * num3 * num4
+     media <- suma / 4 
+
+     escribir "la sumatoria es", suma
+     escribir "el producto es", producto 
+     escribir "la media aritmetica es", media
+FinAlgoritmo
