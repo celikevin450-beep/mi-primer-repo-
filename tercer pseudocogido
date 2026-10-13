@@ -1,0 +1,10 @@
+Algoritmo Area de triangulo ()
+   inicio 
+      definir base, altura, area
+      escribir "escribir la base"
+      leer base
+      escribir "escrbir la altura"
+      leer altura 
+      area <- (base * altura)/ 2
+      escribir "area del triangulo es", area
+FinAlgoritmo
