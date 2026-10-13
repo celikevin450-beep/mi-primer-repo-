@@ -1,0 +1,10 @@
+Algoritmo area de un rectangulo()
+  inicio 
+    definir base, altura
+    escrbir "escribir base"
+    leer base
+    escribir "escribir altura"
+    leer altura 
+    area <- base * altura 
+    escribir "la area del rectangulo es", area 
+Fin Algoritmo
