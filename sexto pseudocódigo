@@ -1,0 +1,23 @@
+Algoritmo factorial()
+  inicio 
+   definir numero, i Como real 
+   definir factorial Como real
+   
+   escribir "ingrese numero entero positivo"
+   leer numoer 
+  
+    si numeor < 0 entonces 
+      escrbir "error: el numero no debe de ser negativo"
+    sino 
+      factorial <- 1
+      i <- 1 // iniciamos contador 
+
+      mientras i <= numero hacer 
+          factorial <- factorial * 1 
+          i <- i + 1 // aumenta el contador en cada vuelta 
+      FinMientras
+
+      escribir "el factorial de", numero", es:", factorial 
+    FinSi
+
+FinAlgoritmo
