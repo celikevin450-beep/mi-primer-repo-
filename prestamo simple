@@ -1,0 +1,32 @@
+Algoritmo prestamo() 
+  inicio 
+   //DECLARACIONES
+    definir monto, tasa, cuota, interes_total Como real 
+    definir meses Como entero
+
+    //CUERPO 
+     escribir "ingrese el monto a pagar"
+      leer monto
+     escribir "ingrese el valor de tasa de interes ej: 0.20"
+      leer tasa 
+     escribir "ingrese el numero de meses"
+      leer meses
+      
+      interes_total <- monto * tasa * meses
+      cuota <- (monto + interes_total) / meses
+      escribir "el interes total es de:  ", interes_total
+      escribir "la cuota total es de:  ", cuota
+FinAlgoritmo 
+  
+
+ ingrese el monto a pagar: 
+ 2000
+ ingrese el valor de tasa de interes ej: 0.20
+ 0.15
+ ingrese el numero de meses:
+ 18
+ interes total <- 2000 * 0.15 * 18
+ cuota <- (2000 + 540) / 18 
+ el interes total es de: $540
+ la cuota total es de: $141.11 
+ 
