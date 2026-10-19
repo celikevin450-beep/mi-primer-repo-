@@ -1,0 +1,15 @@
+Algoritmo salario()
+  inicio
+    //DECLARACIONES
+     definir salario, sueldo, incre Como real
+     definir i Como entero 
+
+    //CUERPO
+     incre <- 0.10
+     escribir "ingrese el salario obtenido"
+      leer salario 
+      para i <- 1 hasta 6 Con paso 1 hacer
+       sueldo <- salario + (salario * incre)
+       escribir "El salario total del año ", i, " es: ", salario
+      FinPara
+FinAlgoritmo
