@@ -1,0 +1,26 @@
+Algoritmo Gasto_Trans()
+  inicio
+   //DECLARACIONES
+    definir viajes, dias, tarifa Como entero 
+    definir costo, gasto_total Como real
+
+  //CUERPO
+    escribir "ingrese el numero de viajes hechos en un dia"
+  leer viajes
+    escribir "ingrese el numero de dias viajados por semana"
+  leer dias
+
+  //COSTO DE PASAJE
+  escribir "¿Le respetaron el medio pasaje? (1 = Sí, 2 = No)"
+    leer tarifa
+
+    Si (tarifa = 1) Entonces
+        costo <- 0.15
+      Sino
+        costo <- 0.30
+    FinSi
+
+    gasto_total <- viajes * costo * dias
+
+  escribir "el gasto total es de:", gasto_total
+FinAlgoritmo
