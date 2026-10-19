@@ -1,16 +1,40 @@
-Algoritmo prom()
-  inicio 
-    //DECLARACIONES
-     definir nota1, nota2, nota3 
-     defini suma, producto, media como real
-     escribir"ingrese 4 numeros"
-     leer num1, num2, num3, num4
+Algoritmo promedio()
+ inicio
+  //DECLARACIONES
+   definir nota1, nota2, nota3, prom Como real 
+   
+  //CONTROL DE NOTA 1 
+    escribir "ingrese nota 1 de 0-10"
+    leer nota1
+    mientras nota1 < 0 o nota1 > 10 Hacer
+      escribir" error nota 1 debe ser de 0-10"
+      leer nota1
+    finMientras
 
-     suma <- num1 + num2 + num3 + num4
-     producto <- num1 * num2 * num3 * num4
-     media <- suma / 4 
+  //CONTROL DE NOTA 2
+    escribir "ingrese nota 2 de 0-10"
+    leer nota2
+    mientras nota2 < 0 o nota2 > 10 Hacer
+      escribir" error nota 2 debe ser de 0-10"
+      leer nota2
+    finMientras
 
-     escribir "la sumatoria es", suma
-     escribir "el producto es", producto 
-     escribir "la media aritmetica es", media
+  //CONTROL DE NOTA 3
+    escribir "ingrese nota 3 de 0-10"
+    leer nota3
+    mientras nota3 < 0 o nota3 > 10 Hacer
+      escribir" error nota 3 debe ser de 0-10"
+      leer nota3
+    finMientras
+
+  //CONTROL DE PROMEDIO ARITMETICO
+  prom <- (nota1 + nota2 + nota3) / 3
+   escribir "promedio final es:  ", prom
+
+  //CONTROL DE VALIDACIÓN
+    Si prom >= 7 entonces
+      escribir "aprobado" 
+      sino 
+      escribir "reprobado"
+    FinSi
 FinAlgoritmo
