@@ -1,0 +1,27 @@
+Algoritmo apro_repro()
+  inicio 
+   //DECLARACIONES
+    definir n, 1, aprobados, reprobados Como entero
+    definir nota Como real
+
+   //CUERPO
+   escribir "ingrese el numero de estudiantes"
+     leer n
+
+    aprobados <- 0
+    reprobados <- 0
+    i <- 1
+    mientras 1 <= n hacer
+    escribir "ingrese la nota del estudiante", i, ":"
+     leer nota
+
+    si nota >= 7 entonces 
+     aprobados <- aprobados + 1 
+      sino
+     reprobados <- reprobados + 1
+    FinSi
+      i <- i + 1 
+    FinMientras
+   escribir "estudiantes aprobados:  ", aprobados
+   escribir "estudiantes reprobados:  ", reprobados
+FinAlgoritmo
