@@ -1,0 +1,24 @@
+Algoritmo sueldo()
+  inicio
+    //DECLARACIONES
+     definir horas, tarifa, sueldo Como real 
+
+     //CUERPO
+     
+      escribir "ingrese el numero de horas trabajadas"
+       leer horas
+       
+       tarifa <- 450
+
+    si horas <= 40 entonces
+    
+       sueldo <- horas * tarifa 
+       
+       sino
+        
+       sueldo <- (40 * tarifa) + ((horas - 40) * tarifa * 2) 
+       
+    finSi
+
+    escribir "sueldo total a  pagar es de:  ", sueldo
+FinAlgoritmo
