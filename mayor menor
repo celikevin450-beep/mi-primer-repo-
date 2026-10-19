@@ -1,0 +1,33 @@
+Algoritmo mayor_menor()
+  inicio
+   //DECLARACIONES
+    definir num1, num2, num3 Como real 
+
+   //CUERPO
+    escribir "ingrese un numero 1"
+     leer num1
+    escribir "ingrese un numero 2"
+     leer num2
+    escribir "ingrese un numero 3"
+     leer num3
+
+    si num1 > num2 y num1 > num3 entonces
+        escribir "El numero mayor es: ", num1
+    sino
+        si num2 > num1 y num2 > num3 entonces
+            escribir "El numero mayor es: ", num2
+        sino
+            escribir "El numero mayor es: ", num3
+        FinSi
+    FinSi
+    
+    si num1 < num2 y num1 < num3 entonces
+        escribir "El numero menor es: ", num1
+    sino
+        si num2 < num1 y num2 < num3 entonces
+            escribir "El numero menor es: ", num2
+        sino
+            escribir "El numero menor es: ", num3
+        FinSi
+    FinSi
+FinAlgoritmo
