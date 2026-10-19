@@ -1,0 +1,15 @@
+Algoritmo Desc_Iva()
+   inicio
+   //DECLARACIONES
+  definir precio, desc, IVA Como real
+
+   //CUERPO
+     escribir "ingrese el precio del producto"
+      leer precio
+
+    desc <- precio - (precio * 0.20)
+    IVA <- (desc * 0.15) + desc
+
+    escribir "precio con descuento es:", desc
+    escribir "precio final más IVA es:", IVA
+FinAlgoritmo
