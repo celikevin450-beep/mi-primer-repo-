@@ -1,0 +1,8 @@
+Algortimo notas()
+  inicio
+   //DECLARACIONES
+    definir n Como entero 
+
+  //CUERPO
+   escribir "ingrese la nota del estudiante"
+    leer n 
