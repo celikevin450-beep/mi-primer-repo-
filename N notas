@@ -1,8 +1,20 @@
-Algortimo notas()
+Algoritmo notas()
   inicio
    //DECLARACIONES
-    definir n Como entero 
+    definir n, i Como entero 
+    definir notas, suma Como real
 
   //CUERPO
-   escribir "ingrese la nota del estudiante"
+   suma <- 0 
+   i <- 1
+   escribir "ingrese el numero de estudiantes"
     leer n 
+   mientras i <= n hacer 
+        escribir "ingrese la nota del estudiante ", i, ":"
+        leer notas
+    suma <- suma + notas
+    i <- i + 1 
+   FinMientras
+  suma <- suma / n 
+  escribir "el promedio de los estudiantes es:  ", suma
+FinAlgoritmo
