@@ -1,0 +1,20 @@
+Algoritmo desc() 
+  inicio 
+   //DECLARACIONES 
+    definir precio, desc Como real
+
+   //CUERPO
+    escribir "ingrese el valor del producto:  "
+      leer precio
+
+     si precio >= 200 entonces
+       desc <- precio - (precio * 0.15) 
+      sino 
+       si precio >= 100 y precio <= 199.99 entonces
+        desc <- precio - (precio * 0.10)
+       sino 
+        desc <- precio - (precio * 0.05)
+     FinSi
+     FinSi
+   escribir "el precio a pagar es de:  ", desc
+FinAlgoritmo
