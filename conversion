@@ -1,0 +1,15 @@
+Algoritmo Conversion()
+ inicio
+  //DECLARACIONES
+   definir tasa, dolares, conversion Como real
+
+ //CUERPO
+  escribir "ingrese el valor en dolares"
+   leer dolares
+
+   tasa <- 18.45
+
+  conversion <- dolares * tasa 
+
+  escribir "el cambio obtenido en pesos mexicanos es de:  ", conversion
+FinAlgoritmo
