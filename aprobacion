@@ -1,0 +1,19 @@
+Algoritmo Aprob()
+  inicio 
+  //DECLARACIONES
+   definir prom Como real 
+
+  //CUERPO
+  escribir "ingrese el promedio obtenido"
+   leer prom 
+   mientras prom < 0 o prom > 10 hacer
+    escribir "error el promedio debe ser de 0-10"
+    leer prom
+   FinMientras
+
+   si prom >= 7 entonces 
+    escribir "aprueba"
+   sino 
+    escribir "no aprueba"
+   FinSi
+FinAlgoritmo
