@@ -1,0 +1,17 @@
+Algoritmo Area_perimetro()
+  inicio 
+  //DECLARACIONES
+   definir largo, ancho, area, perimetro Como real
+
+  //CUERPO
+    escribir "ingrese el largo del terreno"
+     leer largo
+    escribir "ingrese el ancho del terreno"
+     leer ancho
+
+  area <- largo * ancho 
+  perimetro <- (2 * (largo + ancho))
+
+  escribir "el area del terreno es:  ", area, "m2"
+  escribir "el perimetro del terreno es:  ", perimetro, "m"
+FinAlgoritmo
