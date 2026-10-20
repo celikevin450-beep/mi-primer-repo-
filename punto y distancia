@@ -1,0 +1,36 @@
+Algoritmo punto_distan()
+  inicio
+   //DECLARACIONES
+    definir x1, y1, x2, y2, distancia, punto_medio_x, punto_medio_y Como real
+
+    //CUERPO
+     escribir "ingrese el valor de x1"
+      leer x1
+     escribir "ingrese el valor de x2"
+      leer x2 
+     escribir "ingrese el valor de y1"
+      leer y1
+     escribir "ingrese el valor de y2"
+      leer y2
+
+      punto_medio_x <- (x1 + x2) / 2
+      punto_medio_y <- (y1 + y2) / 2
+      distancia <- rc ((x2 - x1)^2 + (y2 - y1)^2)
+      escribir "la distancia es de:  ", distancia
+      escribir "el punto medio es:  (", punto_medio_x",", punto_medio_y")"
+FinAlgoritmo
+
+ingrese el valor de x1:
+4 
+ingrese el valor de x2:
+5
+ingrese el valor de y1:
+3 
+ingrese el valor de y2:
+7
+punto_medio_x <- (4 + 5) / 2 
+punto_medio_x <- (3 + 7) / 2 
+distancia <- rc ((5 - 4)^2 + (7 - 3)^2)
+la distancia es de:
+4.12
+el punto medio es (4.5 , 5)
