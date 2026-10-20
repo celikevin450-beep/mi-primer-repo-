@@ -1,0 +1,34 @@
+Algoritmo energia() 
+  inicio 
+   //DECLARACIONES
+    definir potencia, horas, tarifa, consumo, costo Como real
+
+    //CUERPO
+    escribir "ingrese el valor de la potencia"
+     leer potencia 
+     escribir "ingrese el numero de horas diarias"
+      leer horas 
+     escribir "ingrese el valor de la tarifa"
+       leer tarifa 
+
+    consumo <- (potencia / 1000) * horas * 30
+    costo <- comsumo * tarifa
+
+    escribir "el consumo mensual es de:  ", consumo, "kWh"
+    escribir "el costo total es de:  ", costo
+FinAlgoritmo
+
+//CORRIDA MANUAL
+ingrese el valor de la potencia:
+40
+ingrese el numero de horas diarias:
+10
+ingrese el valor de la tarifa:
+4.5
+consumo <- (40 / 1000) * 10 * 30 
+costo <- 12 * 4.5 
+
+el consumo messual es de: 
+12 kWh
+el costo total es de: 
+$54 
