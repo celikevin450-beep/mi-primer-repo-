@@ -1,0 +1,32 @@
+Algoritmo calcular_bono()
+  inicio
+   //DECLARACIONES
+    definir sueldo_base, productividad, porcentaje_bono, valor_bono, total_pagar Como real
+
+   //CUERPO
+    escribir "Ingrese el sueldo base del empleado: "
+    leer sueldo_base
+    escribir "Ingrese el nivel de productividad (ej. 85 para 85%): "
+    leer productividad
+
+    si productividad >= 90 entonces[cite: 3]
+        porcentaje_bono <- 0.20[cite: 3]
+    sino
+        si productividad >= 70 y productividad <= 89 entonces[cite: 3]
+            porcentaje_bono <- 0.10[cite: 3]
+        sino
+            si productividad >= 50 y productividad <= 69 entonces[cite: 3]
+                porcentaje_bono <- 0.05[cite: 3]
+            sino
+                porcentaje_bono <- 0.00[cite: 3]
+            FinSi
+        FinSi
+    FinSi
+
+    valor_bono <- sueldo_base * porcentaje_bono[cite: 3]
+    total_pagar <- sueldo_base + valor_bono[cite: 3]
+
+    escribir "Sueldo base: $", sueldo_base
+    escribir "Bono calculado: $", valor_bono[cite: 3]
+    escribir "Total a pagar: $", total_pagar[cite: 3]
+FinAlgoritmo
