@@ -1,0 +1,31 @@
+Algoritmo determinar_estacion()
+  inicio
+   //DECLARACIONES
+    definir dia, mes Como entero
+    definir estacion Como cadena
+
+   //CUERPO
+    escribir "Ingrese el número del mes (1-12): "
+    leer mes
+    escribir "Ingrese el día: "[cite: 2]
+    leer dia
+
+    si (mes = 1 o mes = 2) o (mes = 12 y dia >= 21) o (mes = 3 y dia < 21) entonces[cite: 2]
+        estacion <- "Verano"
+    sino
+        si (mes = 4 o mes = 5) o (mes = 3 y dia >= 21) o (mes = 6 y dia < 21) entonces
+            estacion <- "Otoño"
+        sino
+            si (mes = 7 o mes = 8) o (mes = 6 y dia >= 21) o (mes = 9 y dia < 21) entonces
+                estacion <- "Invierno"
+            sino
+                si (mes = 10 o mes = 11) o (mes = 9 y dia >= 21) o (mes = 12 y dia < 21) entonces
+                    estacion <- "Primavera"
+                sino
+                    estacion <- "Fecha no válida"
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+    escribir "La estación del año es: ", estacion[cite: 2]
+FinAlgoritmo
