@@ -1,0 +1,24 @@
+Algoritmo costo_peajes()
+  inicio
+   //DECLARACIONES 
+    definir dist, consumo, precio, peaje, costo_combustible, costo_total Como real
+
+   //CUERPO
+    escribir "ingrese la distancia recorrida: "
+     leer dist 
+    escribir "ingrese el consumo"
+      leer consumo
+    escribir "ingrese el precio del combustible"
+      leer precio
+    escribir "ingrese el valor del peaje"
+      leer peaje 
+
+    litros <- dist / consumo
+    costo_combustible <- litros * precio
+    costo_total <- costo_combustible + peaje
+    
+    escribir "Resumen del Viaje"
+    escribir "Litros de combustible necesarios: ", litros
+    escribir "Costo solo del combustible: $", costo_combustible
+    escribir "Costo TOTAL (combustible + peajes): $", costo_total
+FinAlgoritmo
