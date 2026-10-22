@@ -1,0 +1,51 @@
+Algoritmo estadisticas_calificaciones()
+  inicio
+   //DECLARACIONES
+    definir n, i, aprobados, reprobados Como entero
+    definir nota, suma, promedio, mayor, menor Como real
+
+   //CUERPO
+    escribir "Ingrese la cantidad de calificaciones (N): "
+    leer n
+
+    suma <- 0
+    aprobados <- 0
+    reprobados <- 0
+
+    si n > 0 entonces
+        para i <- 1 hasta n hacer
+            escribir "Ingrese la calificación ", i, ": "
+            leer nota
+
+            suma <- suma + nota
+
+            si nota >= 7 entonces
+                aprobados <- aprobados + 1
+            sino
+                reprobados <- reprobados + 1
+            FinSi
+
+            si i = 1 entonces
+                mayor <- nota
+                menor <- nota
+            sino
+                si nota > mayor entonces
+                    mayor <- nota
+                FinSi
+                si nota < menor entonces
+                    menor <- nota
+                FinSi
+            FinSi
+        fin para
+
+        promedio <- suma / n
+
+        escribir "Promedio: ", promedio
+        escribir "Calificación mayor: ", mayor
+        escribir "Calificación menor: ", menor
+        escribir "Total aprobados: ", aprobados
+        escribir "Total reprobados: ", reprobados
+    sino
+        escribir "La cantidad de calificaciones debe ser mayor a 0."
+    FinSi
+FinAlgoritmo
