@@ -1,0 +1,50 @@
+Algoritmo validar_fecha()
+  inicio
+   //DECLARACIONES
+    definir dia, mes, anio, dias_mes Como entero
+    definir es_bisiesto, fecha_valida Como logico
+
+   //CUERPO
+    escribir "Ingrese el día: "
+    leer dia
+    escribir "Ingrese el mes (1-12): "
+    leer mes
+    escribir "Ingrese el año: "
+    leer anio
+
+    fecha_valida <- falso
+
+    si mes >= 1 y mes <= 12 entonces
+        
+        si (anio mod 4 = 0 y anio mod 100 <> 0) o (anio mod 400 = 0) entonces
+            es_bisiesto <- verdadero
+        sino
+            es_bisiesto <- falso
+        FinSi
+
+        si mes = 2 entonces
+            si es_bisiesto = verdadero entonces
+                dias_mes <- 29
+            sino
+                dias_mes <- 28
+            FinSi
+        sino
+            si mes = 4 o mes = 6 o mes = 9 o mes = 11 entonces
+                dias_mes <- 30
+            sino
+                dias_mes <- 31
+            FinSi
+        FinSi
+
+        si dia >= 1 y dia <= dias_mes entonces
+            fecha_valida <- verdadero
+        FinSi
+        
+    FinSi
+
+    si fecha_valida = verdadero entonces
+        escribir "La fecha ingresada es VÁLIDA."
+    sino
+        escribir "La fecha ingresada NO ES VÁLIDA."
+    FinSi
+  fin
