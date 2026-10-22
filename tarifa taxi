@@ -1,0 +1,32 @@
+Algoritmo tarifa_taxi()
+  inicio
+   //DECLARACIONES
+    definir km, tarifa_base, recargo_distancia, recargo_noche, total Como real
+    definir es_noche Como caracter
+
+   //CUERPO
+    escribir "Ingrese los kilometros recorridos: "
+      leer km
+    escribir "¿El viaje es de noche? (S/N): "
+      leer es_noche
+
+    tarifa_base <- 2.00 + (1.50 * km)
+    
+    recargo_distancia <- 0
+    recargo_noche <- 0
+
+    si km > 10 entonces
+        recargo_distancia <- tarifa_base * 0.20
+    FinSi
+
+    si es_noche = "S" o es_noche = "s" entonces
+        recargo_noche <- tarifa_base * 0.30
+    FinSi
+
+    total <- tarifa_base + recargo_distancia + recargo_noche
+
+    escribir "Tarifa base: $", tarifa_base
+    escribir "Recargo por larga distancia (20%): $", recargo_distancia
+    escribir "Recargo nocturno (30%): $", recargo_noche
+    escribir "Total a pagar: $", total  
+FinAlgoritmo
