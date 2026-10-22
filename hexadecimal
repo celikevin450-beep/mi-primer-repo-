@@ -1,0 +1,36 @@
+Algoritmo decimal_a_hexadecimal()
+  inicio
+   //DECLARACIONES
+    definir num, residuo Como entero
+    definir hex, digito Como cadena
+
+   //CUERPO
+    escribir "Ingrese un número decimal entero: "
+    leer num
+
+    hex <- ""
+
+    si num = 0 entonces
+        hex <- "0"
+    sino
+        mientras num > 0 hacer[
+            residuo <- num mod 16
+
+            segun residuo hacer
+                10: digito <- "A"
+                11: digito <- "B"
+                12: digito <- "C"
+                13: digito <- "D"
+                14: digito <- "E"
+                15: digito <- "F"
+                de otro modo:
+                    digito <- ConvertirATexto(residuo) 
+            finSegun
+
+            hex <- digito + hex
+            num <- num div 16
+        finMientras
+    FinSi
+
+    escribir "El número en hexadecimal es: ", hex
+  fin
