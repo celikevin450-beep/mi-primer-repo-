@@ -1,0 +1,19 @@
+Algoritmo calcular_mcd()
+  inicio
+   //DECLARACIONES
+    definir num1, num2, residuo Como entero
+
+   //CUERPO
+    escribir "Ingrese el primer número entero positivo: "
+    leer num1
+    escribir "Ingrese el segundo número entero positivo: "
+    leer num2
+
+    mientras num2 <> 0 hacer
+        residuo <- num1 mod num2
+        num1 <- num2
+        num2 <- residuo
+    fin mientras
+
+    escribir "El Máximo Común Divisor (MCD) es: ", num1
+FinAlgoritmo 
