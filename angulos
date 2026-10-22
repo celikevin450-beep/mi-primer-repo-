@@ -1,0 +1,29 @@
+Algoritmo triangulo_angulo()
+  inicio 
+   //DECLARACIONES 
+    definir ang1, ang2, ang3, suma Como real 
+
+   //CUERPO
+   escribir "ingrese el angulo 1"
+    leer ang1
+   escribir "ingrese el angulo 2"
+    leer ang2
+   escribir "ingrese el angulo 3"
+     leer ang3
+
+   suma <- ang1 + ang2 + ang3 
+    si suma = 180 entonces
+       si ang1 = 90 o ang2 = 90 o ang3 = 90 entonces
+            escribir "el triangulo es rectangulo"
+        sino 
+            si ang1 > 90 o ang2 > 90 o ang3 > 90 entonces
+                escribir "el triangulo es obtusangulo"
+            sino
+                escribir "el triangulo es acutangulo"
+            FinSi
+        FinSi
+        
+    sino
+        escribir "Error: Los angulos no forman un triangulo (la suma debe ser 180)"
+    FinSi
+FinAlgoritmo
