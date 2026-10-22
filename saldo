@@ -11,16 +11,16 @@ Algoritmo saldo_mensual()
     leer deposito_mensual
     escribir "Ingrese el número de meses (N): "
     leer n
-    escribir "Ingrese la tasa de interés mensual (ej. 1.5 para 1.5%): "[cite: 7]
+    escribir "Ingrese la tasa de interés mensual (ej. 1.5 para 1.5%): "
     leer tasa
 
     saldo <- capital
 
-    para i <- 1 hasta n hacer[cite: 7]
-        saldo <- saldo + deposito_mensual[cite: 7]
+    para i <- 1 hasta n hacer
+        saldo <- saldo + deposito_mensual
         
-        saldo <- saldo + (saldo * (tasa / 100))[cite: 7]
+        saldo <- saldo + (saldo * (tasa / 100))
         
-        escribir "Saldo al finalizar el mes ", i, ": $", saldo[cite: 7]
+        escribir "Saldo al finalizar el mes ", i, ": $", saldo
     fin para
   fin
