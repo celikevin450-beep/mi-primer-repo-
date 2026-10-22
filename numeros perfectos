@@ -1,0 +1,23 @@
+Algoritmo numero_perfecto()
+  inicio
+   //DECLARACIONES
+    definir N, i, suma_divisores Como entero
+
+   //CUERPO
+    escribir "Ingrese un número entero positivo (N): "
+    leer N
+
+    suma_divisores <- 0
+
+    para i <- 1 hasta N - 1 hacer
+        si N mod i = 0 entonces
+            suma_divisores <- suma_divisores + i
+        FinSi
+    finPara
+
+    si suma_divisores = N y N > 0 entonces
+        escribir "El número ", N, " ES un número perfecto."
+    sino
+        escribir "El número ", N, " NO es un número perfecto."
+    FinSi
+FinAlgoritmo
