@@ -1,0 +1,34 @@
+Algoritmo Armstrong()
+  inicio 
+   //DECLARACIONES
+    definir n1, n2, n3, suma, num Como entero
+
+    //CUERPO 
+      escribir "ingrese un numero entre 0-9"
+       leer n1
+      Si n1 < 0 o n1 > 9 Entonces 
+       escribir "el numero ingresado es incorrecto"
+        leer n1
+      Finsi
+      escribir "ingrese un numero entre 0-9"
+       leer n2
+      Si n2 < 0 o n2 > 9 Entonces 
+       escribir "el numero ingresado es incorrecto"
+        leer n2
+      Finsi
+       escribir "ingrese un numero entre 0-9"
+       leer n3
+      Si n3 < 0 o n3 > 9 Entonces 
+       escribir "el numero ingresado es incorrecto"
+        leer n3
+      Finsi
+
+  suma = n1^3 + n2^3 + n3^3
+  num = (n1 * 100) + (n2 * 10) + n3
+
+    si suma = num entonces 
+     escribir "el valor ingresado es un número Armstrong"
+     sino 
+      escribir "el valor ingresado no es un número Armstrong"
+    FinSi
+FinAlgoritmo
