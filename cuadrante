@@ -1,0 +1,29 @@
+Algoritmo cuadrante()
+  inicio 
+   //DECLARACIONES
+    definir x, y Como real 
+
+   //CUERPO 
+    escribir "ingrese el valor de x"
+     leer x
+    escribir "ingrese el valor de y"
+     leer y 
+
+    Si x > 0 Y y > 0 Entonces
+    Escribir "El punto está en el Cuadrante 1"
+Sino
+    Si x < 0 Y y > 0 Entonces
+        Escribir "El punto está en el Cuadrante 2"
+    Sino
+        Si x < 0 Y y < 0 Entonces
+            Escribir "El punto está en el Cuadrante 3"
+        Sino
+            Si x > 0 Y y < 0 Entonces
+                Escribir "El punto está en el Cuadrante 4"
+            Sino
+                Escribir "El punto está sobre un eje o en el origen (0,0)"
+            FinSi
+        FinSi
+    FinSi
+FinSi
+FinAlgoritmo
