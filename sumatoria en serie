@@ -1,0 +1,17 @@
+Algoritmo calculo_suma() 
+  inicio 
+   //DECLARACIONES
+    definir n, i, suma Como entero
+
+    //CUERPO 
+     escribir "ingrese un numero"
+      leer n
+
+     suma <- 0 
+   
+   Para i <- 1 Hasta n Con Paso 1 Hacer
+    suma = suma + i
+   FinPara
+
+   escribir "la suma total es de:  ", suma
+FinAlgoritmo
