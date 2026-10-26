@@ -1,0 +1,25 @@
+Algoritmo ecuacion()
+   inicio
+  //DECLARACIONES
+  Definir a, b, c, discriminante Como Real
+  
+  //CUERPO
+  escribir "ingrese el coeficiente a:"
+  leer a  
+  escribir "ingrese el coeficiente b:"
+  leer b
+  escribir "ingrese el coeficiente c:"
+  leer c
+  
+  discriminante <- b^2 - 4 * a * c
+  
+  si discriminante > 0 entonces
+      escribir "la ecuación tiene dos soluciones reales."
+  sino
+      si discriminante = 0 entonces
+          escribir "la ecuación tiene una solución real."
+      sino
+          escribir "la ecuación no tiene soluciones reales."
+      FinSi
+  FinSi 
+FinAlgoritmo
