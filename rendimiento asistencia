@@ -1,0 +1,24 @@
+Algoritmo clasificacion()
+  //DECLARACIONES
+  definir promedio, asistencia Como real
+  
+  //CUERPO
+  escribir "ingrese el promedio del estudiante (0-10):"
+  leer promedio
+  escribir "ingrese el porcentaje de asistencia (0-100):"
+  leer asistencia
+  
+  si promedio >= 9 y asistencia >= 90 entonces
+      escribir "la categoría del estudiante es: excelente"
+  sino
+      si promedio >= 7 y asistencia >= 80 entonces
+          escribir "la categoría del estudiante es: bueno"
+      sino
+          si promedio >= 6 y asistencia >= 70 entonces
+              escribir "la categoría del estudiante es: regular"
+          sino
+              escribir "la categoría del estudiante es: deficiente"
+          FinSi
+      FinSi
+  FinSi 
+FinAlgoritmo
