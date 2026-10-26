@@ -1,0 +1,17 @@
+Algoritmo hipotenusa()
+  inicio 
+   //DECLARACIONES 
+    definir cate1, cate2, c, area Como real
+
+   //CUERPO
+    escribir "ingrese el valor del cateto 1"
+     leer cate1 
+    escribir "ingrese el valor del cateto 2"
+     leer cate2
+
+    c = raiz(cate1^2 + cate2^2)
+    area = (cate1 * cate2) / 2
+    
+    escribir "la hipotenusa es:  ", c
+    escribir "el area del triangulo es:  ", area
+FinAlgoritmo
