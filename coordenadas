@@ -1,0 +1,16 @@
+Algoritmo coordenadas()
+  inicio 
+   //DEClARACIONES 
+    definir radio, angulo, x, y Como real 
+
+   //CUERPO
+    escribir "ingrese el valor del radio"
+     leer radio
+    escribir "ingrese el angulo"
+     leer angulo
+
+    x = radio * cos(angulo * PI / 180) 
+    y = radio * sen(angulo * PI / 180)
+    
+    escribir "las coordenadas cartesianas son: (", x, ",", y, ")"
+FinAlgoritmo
