@@ -1,0 +1,21 @@
+Algoritmo saldo_final
+  // DECLARACIONES
+  Definir N, i Como Entero
+  Definir aporte, saldo Como Real
+  
+  // CUERPO
+  Escribir "Ingrese la cantidad de meses (N):"
+  Leer N
+  
+  saldo <- 0
+  
+  Para i <- 1 Hasta N Con Paso 1 Hacer
+      Escribir "Ingrese el monto del aporte para el mes ", i, ":"
+      Leer aporte
+      
+      saldo <- saldo + aporte
+      saldo <- saldo + (saldo * 0.008) 
+  FinPara
+  
+  Escribir "El saldo al final de los ", N, " meses es de: ", saldo
+FinAlgoritmo
