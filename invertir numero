@@ -1,0 +1,20 @@
+Algoritmo invertir()
+  //DECLARACIONES
+  definir num, invertido, digito Como entero
+  
+  //CUERPO
+  Escribir "ingrese un número entero positivo:"
+  Leer num
+  
+  invertido <- 0
+  
+  Mientras num > 0 Hacer
+      digito <- num mod 10
+      
+      invertido <- (invertido * 10) + digito
+      
+      num <- trunc(num / 10)
+  FinMientras
+  
+  escribir "el número invertido es: ", invertido
+FinAlgoritmo
