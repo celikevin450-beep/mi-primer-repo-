@@ -1,0 +1,21 @@
+Algoritmo multiplos()
+  //DECLARACIONES
+  definir n, i, cantidad, suma Como entero
+  
+  //CUERPO
+  escribir "Ingrese el número N:"
+  leer n
+  
+  cantidad <- 0
+  suma <- 0
+  
+  Para i <- 1 Hasta n Con Paso 1 Hacer
+      Si i mod 3 = 0 o i mod 5 = 0 Entonces
+          cantidad <- cantidad + 1
+          suma <- suma + i
+      FinSi
+  FinPara
+  
+  escribir "La cantidad de múltiplos es: ", cantidad
+  escribir "La suma total de los múltiplos es: ", suma
+FinAlgoritmo
