@@ -1,0 +1,37 @@
+Algoritmo descuento()
+   inicio
+  //DECLARACIONES
+  definir monto, total_pagar, monto_descuento Como real
+  definir porcentaje_descuento Como entero
+  definir frecuente Como caracter
+  
+  //CUERPO
+  escribir "ingrese el monto de la compra:"
+  leer monto
+  escribir "¿es cliente frecuente? (S/N):"
+  leer frecuente
+  
+  si monto >= 500 entonces
+      porcentaje_descuento <- 15
+  sino
+      si monto >= 300 entonces
+          porcentaje_descuento <- 10
+      sino
+          si monto >= 100 entonces
+              porcentaje_descuento <- 5
+          sino
+              porcentaje_descuento <- 0
+          FinSi
+      FinSi
+  FinSi
+  
+  si frecuente = "S" O frecuente = "s" entonces
+      porcentaje_descuento <- porcentaje_descuento + 5
+  FinSi
+  
+  monto_descuento <- monto * (porcentaje_descuento / 100)
+  total_pagar <- monto - monto_descuento
+  
+  escribir "descuento total aplicado: ", porcentaje_descuento, "%"
+  escribir "el total a pagar es: $", total_pagar
+FinAlgoritmo
