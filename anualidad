@@ -1,0 +1,21 @@
+Algoritmo anualidad()
+  inicio 
+   //DECLARACIONES 
+    definir deposito, tasa, vf, total Como real
+    definir num_meses Como entero 
+
+   //CUERPO
+    escribir "ingrese el valor del deposito mensual"
+     leer deposito
+    escribir "ingrese el valor de la tasa mensual"
+     leer tasa
+    escribir "ingrese el numero de meses"
+     leer num_meses
+
+    vf = deposito * [((1 + tasa)^ num_meses - 1)/tasa]
+    total = deposito * num_meses
+
+    escribir "el valor final es de:  ", vf
+    escribir "el total depositado es de:  ", total
+
+FinAlgoritmo
