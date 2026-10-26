@@ -1,0 +1,24 @@
+Algoritmo estacionamiento()
+  //DECLARACIONES
+  definir horas, tarifa_base, total Como real
+  definir nocturno Como caracter
+  
+  //CUERPO
+  escribir "ingrese la cantidad de horas de estacionamiento:"
+  leer horas
+  escribir "¿es horario nocturno? (S/N):"
+  leer nocturno
+  
+  tarifa_base <- horas * 1.50
+  total <- tarifa_base
+  
+  si horas > 8 entonces
+      total <- total + (total * 0.25)
+  FinSi
+  
+  si nocturno = "S" O nocturno = "s" entonces
+      total <- total + (total * 0.30)
+  FinSi
+  
+  escribir "el total a pagar es de: $", total
+FinAlgoritmo
