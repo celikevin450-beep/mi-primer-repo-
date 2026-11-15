@@ -1,0 +1,35 @@
+Algoritmo descuento_libreria()
+  inicio
+   // DECLARACIONES
+    definir es_estudiante Como texto
+    definir monto, porcentaje_desc, descuento, total_pagar Como real
+
+   // CUERPO
+    escribir "¿Es estudiante de la UTPL? (si/no): "
+    leer es_estudiante
+    escribir "Ingrese el monto de la compra: "
+    leer monto
+
+    si es_estudiante = "si" entonces
+        porcentaje_desc <- 0.20
+        si monto > 30 entonces
+            porcentaje_desc <- 0.25
+            escribir "Descuento aplicado: 25% (20% estudiante + 5% adicional)"
+        sino
+            escribir "Descuento aplicado: 20% (estudiante UTPL)"
+        fin si
+    sino
+        si monto > 50 entonces
+            porcentaje_desc <- 0.10
+            escribir "Descuento aplicado: 10% (compra mayor a $50)"
+        sino
+            porcentaje_desc <- 0
+            escribir "No aplica descuento (0%)"
+        fin si
+    fin si
+
+    descuento <- monto * porcentaje_desc
+    total_pagar <- monto - descuento
+
+    escribir "Monto final a pagar: $", total_pagar
+  fin
