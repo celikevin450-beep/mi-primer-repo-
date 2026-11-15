@@ -1,0 +1,22 @@
+Algoritmo clasificacion_temperatura()
+  inicio
+   // DECLARACIONES
+    definir temperatura Como real
+
+   // CUERPO
+    escribir "Ingrese la temperatura registrada en Loja (°C): "
+    leer temperatura
+
+    si temperatura < 15 entonces
+        escribir "Clasificación: Frío"
+    sino
+        si temperatura <= 25 entonces
+            escribir "Clasificación: Templado"
+        sino
+            escribir "Clasificación: Cálido"
+            si temperatura > 30 entonces
+                escribir "ALERTA: Calor extremo"
+            fin si
+        fin si
+    fin si
+finAlgortimo
