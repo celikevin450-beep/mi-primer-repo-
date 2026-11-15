@@ -1,0 +1,33 @@
+Algoritmo calculo_bono()
+  inicio
+   // DECLARACIONES
+    definir anios Como entero
+    definir sueldo, porcentaje_bono, bono, sueldo_total Como real
+    definir eval_excelente Como texto
+
+   // CUERPO
+    escribir "Ingrese los años de antigüedad: "
+    leer anios
+    escribir "Ingrese el sueldo base: "
+    leer sueldo
+    escribir "¿Tiene evaluación excelente? (si/no): "
+    leer eval_excelente
+
+    si anios > 2 entonces
+        porcentaje_bono <- 0.10
+        si eval_excelente = "si" entonces
+            porcentaje_bono <- 0.15
+        fin si
+    sino
+        si eval_excelente = "si" entonces
+            porcentaje_bono <- 0.05
+        sino
+            porcentaje_bono <- 0
+        fin si
+    fin si
+
+    bono <- sueldo * porcentaje_bono
+    sueldo_total <- sueldo + bono
+
+    escribir "El sueldo total a recibir es: $", sueldo_total
+finAlgoritmo
