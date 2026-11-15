@@ -1,0 +1,27 @@
+Algoritmo acceso_laboratorio()
+  inicio
+   // DECLARACIONES
+    definir es_estudiante, tiene_carne, tiene_autorizacion Como texto
+
+   // CUERPO
+    escribir "¿Es estudiante de la UTPL? (si/no): "
+    leer es_estudiante
+
+    si es_estudiante = "si" entonces
+        escribir "¿Tiene su carné vigente? (si/no): "
+        leer tiene_carne
+        si tiene_carne = "si" entonces
+            escribir "Acceso permitido"
+        sino
+            escribir "Acceso denegado: requiere carné vigente"
+        fin si
+    sino
+        escribir "¿Tiene autorización especial del docente? (si/no): "
+        leer tiene_autorizacion
+        si tiene_autorizacion = "si" entonces
+            escribir "Ingreso temporal"
+        sino
+            escribir "Acceso denegado"
+        fin_si
+    fin_si
+finAlgoritmo
