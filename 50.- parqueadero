@@ -1,0 +1,30 @@
+Algoritmo tarifa_parqueadero()
+  inicio
+   // DECLARACIONES
+    definir es_estudiante Como texto
+    definir horas, subtotal, total_pagar Como real
+
+   // CUERPO
+    escribir "¿Es estudiante UTPL? (si/no): "
+    leer es_estudiante
+    escribir "Ingrese las horas de permanencia: "
+    leer horas
+
+    si es_estudiante = "si" entonces
+        subtotal <- (horas * 1.00) * 0.50
+        si horas > 4 entonces
+            total_pagar <- subtotal + (subtotal * 0.20)
+        sino
+            total_pagar <- subtotal
+        fin si
+    sino
+        subtotal <- horas * 1.00
+        si horas > 6 entonces
+            total_pagar <- subtotal + (subtotal * 0.20)
+        sino
+            total_pagar <- subtotal
+        fin si
+    fin si
+
+    escribir "El monto total a pagar es: $", total_pagar
+finAlgoritmo
