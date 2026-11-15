@@ -1,0 +1,27 @@
+Algoritmo menu_cafeteria()
+  inicio
+   // DECLARACIONES
+    definir opcion Como entero
+
+   // CUERPO
+    escribir "--- MENÚ CAFETERÍA UTPL ---"
+    escribir "1. Café ($1.50)"
+    escribir "2. Jugo ($1.20)"
+    escribir "3. Sandwich ($2.50)"
+    escribir "4. Salir"
+    escribir "Seleccione una opción: "
+    leer opcion
+
+    segun_sea opcion hacer
+        caso 1:
+            escribir "Seleccionó Café. El precio es: $1.50"
+        caso 2:
+            escribir "Seleccionó Jugo. El precio es: $1.20"
+        caso 3:
+            escribir "Seleccionó Sandwich. El precio es: $2.50"
+        caso 4:
+            escribir "Gracias por visitar la cafetería UTPL. ¡Hasta pronto!"
+        de_otro_modo:
+            escribir "Opción no válida. Intente nuevamente."
+    finSegun_sea
+finAlgoritmo
