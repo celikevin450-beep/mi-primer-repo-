@@ -1,0 +1,31 @@
+Algoritmo transporte_loja()
+  inicio
+   // DECLARACIONES
+    definir opcion Como entero
+
+   // CUERPO
+    escribir "--- TRANSPORTE EN LOJA (5 km) ---"
+    escribir "1. Bus urbano"
+    escribir "2. Taxi"
+    escribir "3. Bicicleta"
+    escribir "4. Caminar"
+    escribir "Elija un medio de transporte: "
+    leer opcion
+
+    segun_sea opcion hacer
+        caso 1:
+            escribir "Tiempo estimado: 20 a 25 minutos."
+            escribir "Comentario: Económico, aunque sujeto al tráfico del centro."
+        caso 2:
+            escribir "Tiempo estimado: 10 a 15 minutos."
+            escribir "Comentario: La opción más rápida y directa."
+        caso 3:
+            escribir "Tiempo estimado: 18 a 22 minutos."
+            escribir "Comentario: Ecológico y ágil en tramos con ciclovía."
+        caso 4:
+            escribir "Tiempo estimado: 55 a 65 minutos."
+            escribir "Comentario: Saludable, ideal si no tienes prisa."
+        de_otro_modo:
+            escribir "Opción inválida. Seleccione entre 1 y 4."
+    finSegun_sea
+finAlgoritmo
