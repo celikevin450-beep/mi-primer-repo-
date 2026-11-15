@@ -32,4 +32,4 @@ Algoritmo descuento_libreria()
     total_pagar <- monto - descuento
 
     escribir "Monto final a pagar: $", total_pagar
-  fin
+finAlgortimo
