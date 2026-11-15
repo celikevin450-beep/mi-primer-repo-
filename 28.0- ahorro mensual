@@ -1,0 +1,25 @@
+Algoritmo saldo_mensual
+  // DECLARACIONES
+   Definir N, i Como Entero
+   Definir capital_inicial, deposito, tasa, saldo Como Real
+  
+  // CUERPO
+  Escribir "Ingrese el capital inicial:"
+   Leer capital_inicial
+  Escribir "Ingrese el depósito mensual:"
+   Leer deposito
+  Escribir "Ingrese la cantidad de meses (N):"
+   Leer N
+  Escribir "Ingrese la tasa de interés (%):"
+   Leer tasa
+  
+  saldo <- capital_inicial
+  tasa <- tasa / 100
+  
+  Para i <- 1 Hasta N Con Paso 1 Hacer
+      saldo <- saldo + deposito
+      saldo <- saldo + (saldo * tasa)
+      
+      Escribir "El saldo del mes ", i, " es: ", saldo
+  FinPara
+FinAlgoritmo
