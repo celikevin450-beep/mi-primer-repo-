@@ -1,0 +1,28 @@
+Algoritmo dia_semana()
+  inicio
+   // DECLARACIONES
+    definir num_dia Como entero
+
+   // CUERPO
+    escribir "Ingrese un número del 1 al 7: "
+    leer num_dia
+
+    segun_sea num_dia hacer
+        caso 1:
+            escribir "Lunes - Día de clases"
+        caso 2:
+            escribir "Martes - Día de clases"
+        caso 3:
+            escribir "Miércoles - Día de clases"
+        caso 4:
+            escribir "Jueves - Día de clases"
+        caso 5:
+            escribir "Viernes - Día de clases"
+        caso 6:
+            escribir "Sábado - Fin de semana"
+        caso 7:
+            escribir "Domingo - Fin de semana"
+        de_otro_modo:
+            escribir "Error: número inválido. Debe estar entre 1 y 7."
+    finSegun_sea
+finAlgoritmo
