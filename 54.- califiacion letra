@@ -1,0 +1,25 @@
+Algoritmo clasificacion_notas()
+  inicio
+   // DECLARACIONES
+    definir letra Como caracter
+
+   // CUERPO
+    escribir "Ingrese la letra de calificación (A, B, C, D, F): "
+    leer letra
+
+    // Asignación de rango según la letra ingresada
+    segun_sea letra hacer
+        caso 'A':
+            escribir "Rango de nota: 9 - 10"
+        caso 'B':
+            escribir "Rango de nota: 8 - 8.9"
+        caso 'C':
+            escribir "Rango de nota: 7 - 7.9"
+        caso 'D':
+            escribir "Rango de nota: 6 - 6.9"
+        caso 'F':
+            escribir "Rango de nota: 0 - 5.9"
+        de_otro_modo:
+            escribir "Letra de calificación no válida."
+    finSegun_sea
+finAlgoritmo
