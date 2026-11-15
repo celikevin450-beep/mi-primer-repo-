@@ -1,0 +1,37 @@
+Algoritmo conversor_unidades()
+  inicio
+   // DECLARACIONES
+    definir opcion Como entero
+    definir valor, resultado Como real
+
+   // CUERPO
+    escribir "--- CONVERSOR DE UNIDADES ---"
+    escribir "1. Kilómetros a metros"
+    escribir "2. Metros a centímetros"
+    escribir "3. Horas a minutos"
+    escribir "4. Salir"
+    escribir "Seleccione una opción: "
+    leer opcion
+
+    segun_sea opcion hacer
+        caso 1:
+            escribir "Ingrese los kilómetros: "
+            leer valor
+            resultado <- valor * 1000
+            escribir valor, " km equivalen a ", resultado, " metros"
+        caso 2:
+            escribir "Ingrese los metros: "
+            leer valor
+            resultado <- valor * 100
+            escribir valor, " m equivalen a ", resultado, " centímetros"
+        caso 3:
+            escribir "Ingrese las horas: "
+            leer valor
+            resultado <- valor * 60
+            escribir valor, " horas equivalen a ", resultado, " minutos"
+        caso 4:
+            escribir "Saliendo del conversor..."
+        de_otro_modo:
+            escribir "Opción inválida."
+    finSegun_sea
+finAlgoritmo
